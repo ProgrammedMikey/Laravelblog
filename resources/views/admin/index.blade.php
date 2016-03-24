@@ -11,7 +11,7 @@
             <header>
                 <nav>
                     <ul>
-                        <li><a href="" class="btn">New Post</a></li>
+                        <li><a href="{{ route('admin.blog.create_post') }}" class="btn">New Post</a></li>
                         <li><a href="" class="btn">Show all Posts</a></li>
                     </ul>
                 </nav>
@@ -23,7 +23,7 @@
 
             <li>
                 <article>
-                    <div class=""post-info>
+                    <div class="post-info">
                         <h3>Post Title</h3>
                         <span class="info">Post Author | Date </span>
                     </div>
