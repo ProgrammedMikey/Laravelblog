@@ -1,15 +1,15 @@
 @extends('layouts.master')
 
 @section('title')
-    Post Title
+    {{ $post->title }}
 @endsection
 
 
 @section('content')
     <article>
-        <h3>Post Title</h3>
-        <span class="subtitle">Post Author | Date </span>
-        <p>Post Body</p>
+        <h3>{{ $post->title }}</h3>
+        <span class="subtitle">{{ $post->author }} | {{ $post->created_at }} </span>
+        <p>{{ $post->body }}</p>
 
 @endsection
 

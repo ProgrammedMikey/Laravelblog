@@ -14,7 +14,7 @@
             <h3>{{ $post->title }}</h3>
             <span class="subtitle">{{ $post->author }} | {{$post->created_at}} </span>
             <p>{{$post->body}}</p>
-            <a href="#">Read more</a>
+            <a href="{{ route('blog.single', ['post_id' => $post->id, 'end' => 'frontend']) }}">Read more</a>
         </article>
         @endforeach
         @if($posts->lastPage() > 1)
